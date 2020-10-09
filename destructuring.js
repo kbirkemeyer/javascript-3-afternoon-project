@@ -94,7 +94,15 @@ function ingredients(obj) {
 */
 
 //Code Here
-
+function largeNumbers ({first, second, third}){
+  if(first < second && first < third){
+    return first;
+  } 
+  else if (second < first && second < third){
+    return second;
+  } else (third < first && third < second)
+    return third;
+  }
 
 
 ////////// PROBLEM 6 //////////
@@ -106,5 +114,13 @@ function ingredients(obj) {
 */
 
 //Code Here
-
+function numberGroups ({a, b, c}) {
+  if(a.length > b.length && a.length > c.length){
+    return a;
+  } 
+  else if (b.length > a.length && b.length > a.length){
+    return b;
+  } else (c.length > a.length && c.length > b.length)
+    return c;
+  }
 
