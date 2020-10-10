@@ -51,7 +51,17 @@ var employees = [
 */
 
 //Code Here
-
+function employeeUpdater(){
+  for(let key in employees){
+    if(employees[key].firstName === "Theo"){
+      delete employees[key];
+    } else if (employees[key].firstName === "Lorie"){
+      employees[key].department = "HR"
+    } else {
+    }     
+  }
+  return employees;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -69,6 +79,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+function removeDuplicates(){
+  for(i = 0; i < workplaceAccidents.length; i++){
+    for(j = i + 1; j < workplaceAccidents.length; j++){
+      if(workplaceAccidents[i] === workplaceAccidents[j]){
+        workplaceAccidents.splice(j, 1);
+      }
+    }
+  }
+  return workplaceAccidents;
+}
 
 
 
